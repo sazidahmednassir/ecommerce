@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Apple AirPods",
+    "price": "1300",
+    "description": "Apple AirPods with Wireless Charging Case with Lightning Charging Case Included. Over 24 Hours of Battery Life, Effortless Setup. Bluetooth Headphones for iPhone",
+    "img": "/images/products/airpods.jpg",
+    "ratings": 5,
+    "numReviews": 4
+  },
+  {
+    "id": 2,
+    "name": "Echo Dot",
+    "price": "4000",
+    "description": "Our most popular Echo is now even better. With a new speaker and design, Echo Dot is a voice-controlled smart speaker with Alexa, perfect for any room. Just ask for music, news, information, and more. You can also drop-in on another Echo device and control compatible smart home devices with your voice.",
+    "img": "/images/products/alexa.jpg",
+    "ratings": 4.5,
+    "numReviews": 14
+  },
+  {
+    "id": 3,
+    "name": "Panasonic LUMIX FZ1000",
+    "price": "7850",
+    "description": "20.1MP Digital Camera, 16x 25-400mm LEICA DC Lens, 4K Video, Optical Image Stabilizer and 3.0-inch Display – Point and Shoot Camera - DC-FZ1000M2 (Black)",
+    "img": "/images/products/camera.jpg",
+    "ratings": 5,
+    "numReviews": 24
+  },
+  {
+    "id": 4,
+    "name": "Logitech MX",
+    "price": "2800",
+    "description": "Anywhere 3 for Mac Compact Performance Mouse,Wireless, Comfortable, Ultrafast Scrolling, Any Surface, Portable, 4000DPI, Customizable Buttons, USB-C, Bluetooth, Apple Mac, iPad - Pale Grey",
+    "img": "/images/products/mouse.jpg",
+    "ratings": 4.7,
+    "numReviews": 8
+  },
+  {
+    "id": 5,
+    "name": "Apple iPhone 11 Pro Max",
+    "price": "100000",
+    "description": "The iPhone 11 Pro Max feature Intels modems with Gigabit-class LTE, 4x4 MIMO, and LAA for speeds up to 1.6Gb/s, Wi-Fi 6 support (802.11ax), Bluetooth 5.0, 256 GB, Dual-SIM with eSIM, and an Apple-designed U1 Ultra Wideband chip that improves spatial awareness and allows for better indoor tracking",
+    "img": "/images/products/phone.jpg",
+    "ratings": 5,
+    "numReviews": 2
+  },
+  {
+    "id": 6,
+    "name": "PlayStation 5",
+    "price": "50000",
+    "description": "The PS5 console unleashes new gaming possibilities that you never anticipated. Experience lightning fast loading with an ultra-high speed SSD, deeper immersion with support for haptic feedback, adaptive triggers, and 3D Audio, and an all-new generation of incredible PlayStation games.",
+    "img": "/images/products/playstation.jpg",
+    "ratings": 4.5,
+    "numReviews": 34
+  }
+]
