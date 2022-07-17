@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import Rating from '../Rating/Rating';
 
 const Product = ({product}) => {
     return (
@@ -14,7 +15,8 @@ const Product = ({product}) => {
 
             <Card.Text as='div'>
                 <div className="my-3">
-                    {product.ratings} from {product.numReviews} reviews
+                    <Rating rate={product.ratings} view={`${product.numReviews} reviews`} color={'red'}/>
+                    
                 </div>
             </Card.Text>
 
