@@ -11,7 +11,7 @@ const Home = () => {
                 {
                     services.map(product=>(
                         <Col sm={12} md={6} lg={4} xl={4}>
-                        <Product product={product}></Product>
+                        <Product key={product.id} product={product}></Product>
                         </Col>
                     ))
                 }
