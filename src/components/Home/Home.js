@@ -6,7 +6,7 @@ import Product from '../Products/Product';
 const Home = () => {
     return (
         <>
-            <h1>New Collection</h1>
+            <h1 className='py-3 text-center'>New Collection</h1>
             <Row>
                 {
                     services.map(product=>(
