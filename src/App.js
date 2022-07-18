@@ -1,4 +1,5 @@
 import { Container } from 'react-bootstrap';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -10,7 +11,11 @@ function App() {
     <>
     <Header></Header>
     <Container>
-      <Home/>
+      <Routes>
+      <Route path="/" element={<Home></Home>}></Route>
+      <Route path="/home" element={<Home></Home>}></Route>
+      </Routes>
+   
 
     
     </Container>
