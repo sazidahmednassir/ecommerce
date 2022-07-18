@@ -1,9 +1,10 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Rating from '../Rating/Rating';
 
 const Product = ({product}) => {
+    console.log(product.id)
     return (
         <Card className='my-3 p-3 rounded'>
             <NavLink to={`/product/${product.id}`}>
@@ -22,6 +23,7 @@ const Product = ({product}) => {
             </Card.Text>
 
             <Card.Text as='h3'>${product.price}</Card.Text>
+            <Link class="btn btn-primary" to={`/product/${product.id}` }  >Order Now</Link>
 
             </Card.Body>
             
