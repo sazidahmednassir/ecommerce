@@ -4,7 +4,7 @@
     "name": "Apple AirPods",
     "price": "1300",
     "description": "Apple AirPods with Wireless Charging Case with Lightning Charging Case Included. Over 24 Hours of Battery Life, Effortless Setup. Bluetooth Headphones for iPhone",
-    "img": "/images/products/airpods.jpg",
+    "img": "./images/products/airpods.jpg",
     "ratings": 5,
     "numReviews": 4,
     "stock": 5

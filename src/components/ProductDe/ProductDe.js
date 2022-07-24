@@ -3,11 +3,12 @@ import { Button, Card, Col, Image, ListGroup, Row } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
 import services from '../../../src/services.json';
 import Rating from '../Rating/Rating';
+import './ProductDe.css';
 
 
 const ProductDe = ({match}) => {
-    const { productid } = useParams();
-    const product=services.find((p)=>p.id ==productid)
+    const { id } = useParams();
+    const product=services.find((p)=>p.id == id)
 
     
     
@@ -17,7 +18,11 @@ const ProductDe = ({match}) => {
     
     return (
         <>
-           <Link className='btn btn-light my-3' to='/'>GO Back</Link>
+        
+  <Link className='btn btn-light my-3' to='/'><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sp" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" /> </svg> </Link>
+
+        
            <Row>
             <Col md={6}>
                 <Image src={product.img} alt={product.name} fluid></Image>
