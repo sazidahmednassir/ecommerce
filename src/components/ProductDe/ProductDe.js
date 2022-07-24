@@ -1,15 +1,27 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import { Button, Card, Col, Image, ListGroup, Row } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
-import services from '../../../src/services.json';
 import Rating from '../Rating/Rating';
 import './ProductDe.css';
 
 
 const ProductDe = ({match}) => {
     const { id } = useParams();
-    const product=services.find((p)=>p.id == id)
+    // const product=services.find((p)=>p.id == id)
+    const [product, setProduct]=useState({})
 
+    useEffect(()=>{
+        const fetchP= async()=>{
+            const {data}= await axios.get(`/api/products/${id}`)
+            setProduct(data)
+
+        }
+        fetchP()
+        
+    }, [])
+
+    console.log(product)
     
     
     // const product=services.find((p)=>p.id===mat)
@@ -33,7 +45,7 @@ const ProductDe = ({match}) => {
                         <h2>{product.name}</h2>
                     </ListGroup.Item>
                     <ListGroup.Item>
-                        <Rating rate={product.ratings} view={`${product.numReviews} reviews`} color={'red'}></Rating>
+                        <Rating rate={product.rating} view={`${product.numReviews} reviews`} color={'red'}></Rating>
                     </ListGroup.Item>
                     <ListGroup.Item>
                         Price: $ {product.price}
@@ -57,7 +69,7 @@ const ProductDe = ({match}) => {
                             <Row>
                                 <Col>Status</Col>
                                 <Col>
-                                {product.stock>0? 'In Stock':'Out of Stock'}
+                                {product.countInStock>0? 'In Stock':'Out of Stock'}
                                 </Col>
                             </Row>
                         </ListGroup.Item>
