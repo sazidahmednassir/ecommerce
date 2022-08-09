@@ -4,11 +4,11 @@ import { Link, NavLink } from 'react-router-dom';
 import Rating from '../Rating/Rating';
 
 const Product = ({product}) => {
-    console.log(product.id)
+    // console.log(product._id)
     return (
         <Card className='my-3 p-3 rounded'>
-            <NavLink to={`/product/${product.id}`}>
-                <Card.Img src={product.img} variant='top'></Card.Img>
+            <NavLink to={`/product/${product._id}`}>
+                <Card.Img src={product.image} variant='top'></Card.Img>
             </NavLink>
             <Card.Body>
             <NavLink className='text-decoration-none' to={`/product/${product.id}`}>
@@ -23,7 +23,7 @@ const Product = ({product}) => {
             </Card.Text>
 
             <Card.Text as='h3'>${product.price}</Card.Text>
-            <Link class="btn btn-primary" to={`/product/${product.id}` }  >Order Now</Link>
+            <Link class="btn btn-primary" to={`/product/${product._id}` }  >Order Now</Link>
 
             </Card.Body>
             

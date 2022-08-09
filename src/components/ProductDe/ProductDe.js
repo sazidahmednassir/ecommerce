@@ -8,6 +8,7 @@ import './ProductDe.css';
 
 const ProductDe = ({match}) => {
     const { id } = useParams();
+    // console.log(id)
     // const product=services.find((p)=>p.id == id)
     const [product, setProduct]=useState({})
 
@@ -15,11 +16,11 @@ const ProductDe = ({match}) => {
         const fetchP= async()=>{
             const {data}= await axios.get(`/api/products/${id}`)
             setProduct(data)
-
+            console.log(data)
         }
         fetchP()
         
-    }, [])
+    }, [product])
 
     console.log(product)
     
@@ -37,7 +38,7 @@ const ProductDe = ({match}) => {
         
            <Row>
             <Col md={6}>
-                <Image src={product.img} alt={product.name} fluid></Image>
+                <Image src={product.image} alt={product.name} fluid></Image>
             </Col>
             <Col md={3}>
                 <ListGroup variant='flush'>
